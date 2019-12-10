@@ -13,7 +13,7 @@ loop do
 
 # Ask for loan amount and loop if invalid
   prompt("Enter the loan amount: ")
-  loan_amount = nil # blocks can't create their own variables, must assign variable outside
+  loan_amount = nil # blocks can't create their own outside variables, must assign variable outside for it to be visible
   loop do
     loan_amount = gets.chomp # can't turn this into a float because still need to test empty?() method
   

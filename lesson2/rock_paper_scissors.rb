@@ -2,7 +2,7 @@ VALID_CHOICES = ['rock', 'paper', 'scissors', 'lizard', 'spock']
 
 def prompt(message)
   puts "=> #{message}"
-end 
+end
 
 def append(input) # Unless a parameter is entered and mutated, the variable outside can not be changed
   if input == "ro"
@@ -18,7 +18,7 @@ def append(input) # Unless a parameter is entered and mutated, the variable outs
   end
 end
 
-def keep_track(player, computer) 
+def keep_track(player, computer)
   num1 = 0
   num2 = 0
   if (player == 'rock' && (computer == 'scissors' || computer == 'lizard')) ||
@@ -70,10 +70,10 @@ loop do
     choice = ''
     
     loop do
-      prompt("Choose one: #{(VALID_CHOICES.map { |element| element[0..1]}).join(', ')}")
+      prompt("Choose one: #{(VALID_CHOICES.map { |element| element[0..1] }).join(', ')}")
       choice = gets.chomp
 
-      if (VALID_CHOICES.map { |element| element[0..1]}).join(', ').include?(choice)
+      if (VALID_CHOICES.map { |element| element[0..1] }).join(', ').include?(choice)
         break
       else
         prompt("That's not a valid choice.")

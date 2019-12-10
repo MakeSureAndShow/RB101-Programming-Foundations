@@ -185,7 +185,7 @@ Style/SpaceAroundEqualsInParameterDefault:
 
 Style/StringLiterals:
   Description: Force use of single or double quotes when no interpolation
-  Enabled: false
+  Enabled: true
 
 Style/SymbolArray:
   Description: 'Use %i or %I for arrays of symbols.'
